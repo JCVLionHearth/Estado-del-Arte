@@ -1,0 +1,83 @@
+
+
+https://arxiv.org/pdf/2101.11718
+https://arxiv.org/abs/2402.06900
+https://arxiv.org/abs/2309.00770
+
+¡Claro! El artículo titulado "BOLD: Dataset and Metrics for Measuring Biases in Open-Ended Language Generation" presenta un estudio sobre los sesgos en la generación de lenguaje natural abierta. Aquí tienes un resumen:
+
+Resumen del Artículo
+Objetivo del Estudio: El estudio se centra en identificar y medir los sesgos sociales en los modelos de generación de lenguaje natural. Estos modelos, utilizados en aplicaciones como chatbots y generación automática de historias, pueden generar textos con sesgos sociales.
+
+Contribuciones Clave:
+
+BOLD Dataset: Se introduce el conjunto de datos BOLD (Bias in Open-Ended Language Generation Dataset), que contiene 23,679 prompts en inglés para evaluar sesgos en cinco dominios: profesión, género, raza, religión e ideología política1.
+Nuevas Métricas: Se proponen nuevas métricas automatizadas para medir la toxicidad, normas psicolingüísticas y polaridad de género en los textos generados2.
+Resultados del Estudio: El análisis de textos generados por tres modelos populares de lenguaje muestra que estos modelos exhiben un mayor sesgo social en comparación con textos escritos por humanos en Wikipedia2.
+Importancia del Estudio: El estudio destaca la necesidad de evaluar y mitigar los sesgos en la generación de lenguaje natural para evitar resultados injustos y experiencias negativas para los usuarios de aplicaciones basadas en estos modelos1.
+
+El BOLD dataset (Bias in Open-Ended Language Generation Dataset) es un conjunto de datos diseñado para evaluar y medir los sesgos sociales en los modelos de generación de lenguaje natural. Aquí te explico en qué consiste y cómo se utiliza:
+
+¿Qué es el BOLD dataset?
+El BOLD dataset contiene 23,679 prompts (frases o preguntas iniciales) en inglés, que están categorizados en cinco dominios específicos:
+
+Profesión
+Género
+Raza
+Religión
+Ideología política
+Estos prompts están diseñados para provocar respuestas de los modelos de lenguaje que puedan revelar sesgos en estos dominios.
+
+¿Qué se hace con el BOLD dataset?
+El BOLD dataset se utiliza para:
+
+Evaluar Sesgos: Los investigadores utilizan estos prompts para generar respuestas con modelos de lenguaje y luego analizan estas respuestas para identificar y medir sesgos sociales.
+Desarrollar Métricas: Se desarrollan y aplican nuevas métricas automatizadas para evaluar aspectos como la toxicidad, normas psicolingüísticas y polaridad de género en los textos generados.
+Comparar Modelos: Se comparan los sesgos presentes en los textos generados por diferentes modelos de lenguaje con los textos escritos por humanos, como los de Wikipedia.
+Mitigación de Sesgos: Los resultados obtenidos ayudan a desarrollar estrategias para mitigar los sesgos en los modelos de generación de lenguaje, mejorando así la equidad y la justicia en las aplicaciones que utilizan estos modelos.
+El objetivo final es crear modelos de lenguaje más justos y menos propensos a generar contenido sesgado, lo que es crucial para aplicaciones como chatbots, asistentes virtuales y otras tecnologías de inteligencia artificial.
+
+Desarrollar nuevas métricas para medir la toxicidad en la generación de lenguaje natural implica varios pasos clave. Aquí te explico cómo podría hacerse, tomando como ejemplo la métrica de toxicidad:
+
+Desarrollo de Métricas de Toxicidad
+Definición de Toxicidad:
+
+Primero, es crucial definir claramente qué se considera "tóxico". Esto puede incluir lenguaje ofensivo, discriminatorio, violento, etc. La definición debe ser precisa y basada en criterios bien establecidos.
+Recolección de Datos:
+
+Segundo, se necesita un conjunto de datos etiquetados con ejemplos de texto que sean considerados tóxicos y no tóxicos. Estos datos pueden provenir de fuentes como redes sociales, foros, y otros textos generados por usuarios.
+Entrenamiento de Modelos:
+
+Tercero, se entrenan modelos de aprendizaje automático (como modelos de lenguaje preentrenados) utilizando estos datos etiquetados. Los modelos aprenden a identificar patrones y características asociadas con la toxicidad.
+Desarrollo de Métricas:
+
+Cuarto, se desarrollan métricas específicas para evaluar la toxicidad. Estas métricas pueden incluir:
+Toxicity Score: Un puntaje que indica el nivel de toxicidad de un texto.
+Precision and Recall: Medidas de precisión y exhaustividad para evaluar la exactitud del modelo en identificar textos tóxicos.
+F1 Score: Una métrica que combina precisión y exhaustividad en un solo valor.
+Evaluación y Validación:
+
+Quinto, se evalúan y validan las métricas utilizando conjuntos de datos de prueba. Esto asegura que las métricas sean robustas y fiables.
+Ejemplo de Métrica de Toxicidad
+Un ejemplo de métrica de toxicidad es el Toxicity Score, que puede ser calculado utilizando modelos de lenguaje preentrenados como BERT o GPT. Estos modelos pueden ser ajustados para detectar lenguaje tóxico basándose en las características aprendidas durante el entrenamiento1.
+
+Implementación Práctica
+Análisis de Factores de Toxicidad:
+
+Identificar factores específicos que contribuyen a la toxicidad, como insultos, amenazas, o lenguaje discriminatorio.
+Atributos Tóxicos Intrínsecos:
+
+Examinar los atributos tóxicos intrínsecos de los modelos de lenguaje para determinar su idoneidad como evaluadores de toxicidad1.
+Evaluación Continua:
+
+Implementar un sistema de evaluación continua para mejorar y ajustar las métricas basadas en nuevos datos y retroalimentación.
+Desarrollar métricas de toxicidad es un proceso iterativo que requiere ajustes y mejoras constantes para asegurar que los modelos de lenguaje generen contenido seguro y apropiado.
+
+Bias and Fairness in Large Language Models: A Survey:
+
+Este artículo ofrece una revisión exhaustiva de las técnicas de evaluación y mitigación de sesgos en los LLMs. Se consolidan y formalizan las nociones de sesgo social y equidad en el procesamiento del lenguaje natural, definiendo distintos aspectos del daño y proponiendo varios criterios para operacionalizar la equidad en los LLMs1.
+Se presentan tres taxonomías intuitivas: dos para la evaluación de sesgos (métricas y conjuntos de datos) y una para la mitigación de sesgos. Las métricas de evaluación se organizan según los diferentes niveles en los que operan en un modelo: embeddings, probabilidades y texto generado2.
+Taxonomía de Métricas para la Evaluación de Sesgos:
+
+Este artículo categoriza y discute una amplia gama de métricas que pueden evaluar sesgos en diferentes niveles fundamentales de un modelo: basadas en embeddings (usando representaciones vectoriales), basadas en probabilidades (usando probabilidades asignadas por el modelo a los tokens) y basadas en texto generado (usando continuaciones de texto generadas por el modelo)3.
+Estos artículos proporcionan una guía clara de la literatura existente, empoderando a los investigadores y practicantes para comprender mejor y prevenir la propagación de sesgos en los LLMs. Si necesitas más detalles sobre alguno de estos artículos o tienes alguna otra pregunta, ¡házmelo saber!
